@@ -21,6 +21,7 @@ Python 2.6+
 * -hf,--hidden-dir - makes the script to skip printing no of hidden files.
 * -hd,--hidden-dir - makes the script to skip printing no of hidden directories.
 * -p,--path - custom path to scan and print.
+
 """ any argument with any value makes the script to skip the output of respective value """
 
 #Usage:
