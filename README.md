@@ -1,6 +1,6 @@
-"""This is my first python project in bit bucket
+******"""This is my first python project in bit bucket
 I am a beginner in python i created this script based on my knowledge in the language
-Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""
+Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""******
 
 #Description:
 This script lists all the no of files,directories,hidden files,hidden directories under each directory by default.
@@ -17,11 +17,11 @@ Python 2.6+
 
 #Argument details:
 """ any argument with any value makes the script to skip the output of respective value """
--f,--file - makes the script to skip printing no of files.
--d,--dir - makes the script to skip printing no of directories.
--hf,--hidden-dir - makes the script to skip printing no of hidden files.
--hd,--hidden-dir - makes the script to skip printing no of hidden directories.
--p,--path - custom path to scan and print.
+* -f,--file - makes the script to skip printing no of files.
+* -d,--dir - makes the script to skip printing no of directories.
+* -hf,--hidden-dir - makes the script to skip printing no of hidden files.
+* -hd,--hidden-dir - makes the script to skip printing no of hidden directories.
+* -p,--path - custom path to scan and print.
 
 #Usage:
 python file-lister.py
