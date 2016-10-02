@@ -22,7 +22,7 @@ Python 2.6+
 * -hd,--hidden-dir - makes the script to skip printing no of hidden directories.
 * -p,--path - custom path to scan and print.
 
-""" any argument with any value makes the script to skip the output of respective value """
+Any argument with any value except for -p|--path makes the script to skip the output of respective function that is assigned to.
 
 #Usage:
 * python file-lister.py
