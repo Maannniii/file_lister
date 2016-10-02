@@ -1,6 +1,6 @@
-******"""This is my first python project in bit bucket
-I am a beginner in python i created this script based on my knowledge in the language
-Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""******
+***"""This is my first python project in bit bucket. 
+I am a beginner in python i created this script based on my knowledge in the language. 
+Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""***
 
 #Description:
 This script lists all the no of files,directories,hidden files,hidden directories under each directory by default.
@@ -24,6 +24,6 @@ Python 2.6+
 * -p,--path - custom path to scan and print.
 
 #Usage:
-python file-lister.py
-python file-lister.py -p "path to scan"
-python file-lister.py -f "any value"
+* python file-lister.py
+* python file-lister.py -p "path to scan"
+* python file-lister.py -f "any value"
