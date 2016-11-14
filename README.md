@@ -8,7 +8,7 @@ I have also added support to command line arguments
 Just run as python file-lister.py to list the no of files.directories,hidden files,hidden directories under each directory.
 
 #Requirements:
-Python 2.6+
+Python 2.6,2.6+
 
 #Instructions:
 * Run as python file-lister.py to list the no of files.directories,hidden files,hidden directories under each directory.
