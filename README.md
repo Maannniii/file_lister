@@ -3,7 +3,10 @@ I am a beginner in python I've created this script based on my knowledge in the 
 Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""***
 
 #Description:
-This script lists the number of files under each directory by default. Directories, Hidden Files, Hidden Directories can also be listed by adding respective arguments. The script also added support to command line arguments. Just run as python file-lister.py to list the number of files. 
+    This script lists the number of files under each directory by default. 
+    Directories, Hidden Files, Hidden Directories can also be listed by adding respective arguments. 
+    The script also supports command line arguments. 
+    Just run as python file-lister.py to list the number of files. 
 
 #Requirements:
 Python 2.6+
