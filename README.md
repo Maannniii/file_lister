@@ -1,6 +1,6 @@
 ***"""This is my first python project in bit bucket. 
 I am a beginner in python I've created this script based on my knowledge in the language. 
-Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""***
+I created this script initially to address my issue and then i want to make it public so that others can use it"""***
 
 #Description:
 This script lists the number of files under each directory by default. 
