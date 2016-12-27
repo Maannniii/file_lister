@@ -2,9 +2,9 @@
 import os
 from argparse import ArgumentParser
 from Queue import Queue
-from sys import argv
+from sys import argv,setrecursionlimit
+#setrecursionlimit(3000) if you get "maximum recursion depth exceeded" error enable this and set value > 1000 defaultvalue is 1000
 q=Queue()
-arg=""
 
 def files(pat):
 	files=[x for x in os.listdir(pat) if not x.startswith(".") and os.path.isfile(os.path.join(pat,x))]
@@ -26,28 +26,27 @@ def main(location):
 	b=directories(location)
 	for item in b:
 		q.put(os.path.join(location,item))
-	print "path = ",location
-	if not arg.file:
-		print "files = ",len(files(location))
-	if not arg.dir:
-		print "directories = ",len(directories(location))
-	if not arg.hidden_file:
-		print "Hidden files = ",hid_fil(location)
-	if not arg.hidden_dir:
-		print "Hidden directories = ",hid_dir(location)
+	print "path =",location
+	print "files =",len(files(location))
+	if '-d' in argv[1:] or '--dir' in argv[1:]:
+		print "directories =",len(directories(location))
+	if '-f' in argv[1:] or '--hidden-file' in argv[1:]:
+		print "Hidden files =",hid_fil(location)
+	if '-hd' in argv[1:] or '--hidden-dir' in argv[1:]:
+		print "Hidden directories =",hid_dir(location)
 	while not q.empty():
 		main(q.get())
 
 if __name__=="__main__":
-	pars=ArgumentParser()
-	pars.add_argument('-f','--file',help=" if not required",required=False)
-	pars.add_argument('-d','--dir',help="0 if not required",required=False)
-	pars.add_argument('-hf','--hidden-file',help="0 if not required",required=False)
-	pars.add_argument('-hd','--hidden-dir',help="0 if not required",required=False)
-	pars.add_argument('-p','--path',help="custom path to directory",required=False)
-	globals()['arg']=pars.parse_args()
-	if not arg.path:
-		arg.path=os.getcwd()
-	if arg.path == ".":
-		arg.path=os.path.abspath(".")
-	main(arg.path)
+	if not argv[1:]:
+		path=os.getcwd()
+	if "-p" in argv[1:]:
+	    path=argv[argv.index("-p")+1]
+	elif "--path" in argv[1:]:
+	    path=argv[argv.index("--path")+1]
+	if path == ".":
+		path=os.path.abspath(".")
+	if path[0] =="/" or path[0:2] == "./" or path[0:3]=="../":
+	    main(path)
+	elif path[0].isalpha():
+	    main(path)

@@ -1,30 +1,26 @@
 ***"""This is my first python project in bit bucket. 
-I am a beginner in python i created this script based on my knowledge in the language. 
+I am a beginner in python i created this script based on my knumberwledge in the language. 
 Actually i created this script initially to address my issue and then i want to make it public so that others can use it"""***
 
 #Description:
-This script lists all the no of files,directories,hidden files,hidden directories under each directory by default.
+This script lists all the number of files,directories,hidden files,hidden directories under each directory by default.
 I have also added support to command line arguments
-Just run as python file-lister.py to list the no of files.directories,hidden files,hidden directories under each directory.
+Just run as python file-lister.py to list the number of files,directories,hidden files,hidden directories under each directory.
 
 #Requirements:
-Python 2.6,2.6+
+Python 2.6+
 
 #Instructions:
-* Run as python file-lister.py to list the no of files.directories,hidden files,hidden directories under each directory.
-* script without additional arguments gives outputs no of files,directories,hidden files,hidden directories recursively from present working directory.
-
-
-#Argument details:
-* -f,--file - makes the script to skip printing no of files.
-* -d,--dir - makes the script to skip printing no of directories.
-* -hf,--hidden-dir - makes the script to skip printing no of hidden files.
-* -hd,--hidden-dir - makes the script to skip printing no of hidden directories.
-* -p,--path - custom path to scan and print.
-
-Any argument with any value except for -p|--path makes the script to skip the output of respective function that is assigned to.
+* Run as python file-lister.py to list the number of files,directories,hidden files,hidden directories under each directory.
+* script without additional arguments gives outputs number of files,directories,hidden files,hidden directories recursively from working directory.
 
 #Usage:
-* python file-lister.py
-* python file-lister.py -p "path to scan"
-* python file-lister.py -f "any value"
+* python file-lister.py [OPTION]
+* -f,--file - prints number of files.
+* -d,--dir - prints number of directories.
+* -hf,--hidden-dir - prints number of hidden files.
+* -hd,--hidden-dir - prints number of hidden directories.
+* -p,--path - custom path to scan and print.
+
+#numberte:
+if you get "maximum recursion depth exceeded" error enable this and set value > 1000 defaultvalue is 1000
