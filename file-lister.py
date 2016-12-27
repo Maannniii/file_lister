@@ -3,7 +3,7 @@ import os
 from argparse import ArgumentParser
 from Queue import Queue
 from sys import argv,setrecursionlimit
-#setrecursionlimit(3000) if you get "maximum recursion depth exceeded" error enable this and set value > 1000 defaultvalue is 1000
+#setrecursionlimit(3000) if you get "maximum recursion depth exceeded" error enable this and set value > 1000 default value is 1000
 q=Queue()
 
 def files(pat):
