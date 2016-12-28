@@ -26,3 +26,4 @@ Python 2.6+
 
 #Note:
 If you get "maximum recursion depth exceeded" error enable setrecursionlimit in file-lister.py and set value > 1000 default value is 1000.
+Also this script works only on linux systems.
