@@ -25,4 +25,4 @@ Python 2.6+
 * -p,--path - custom path to scan and print.
 
 #Note:
-If you get "maximum recursion depth exceeded" error enable setrecursionlimit and set value > 1000 default value is 1000.
+If you get "maximum recursion depth exceeded" error enable setrecursionlimit in file-lister.py and set value > 1000 default value is 1000.
